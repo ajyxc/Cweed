@@ -28,16 +28,50 @@ public class DFragment extends DialogFragment{
 
         View view = inflater.inflate(R.layout.my_dialog, null);
 
-        LinearLayout sendFreeTextButton = (LinearLayout) view.findViewById(R.id.lin1);
-        sendFreeTextButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), TextDirection.class);
-                DFragment.this.startActivity(intent);
-            }
-        });
+        view.findViewById(R.id.lin1).setOnClickListener(mListener);
+        view.findViewById(R.id.lin2).setOnClickListener(mListener);
+        view.findViewById(R.id.lin3).setOnClickListener(mListener);
+
+        //view.findViewById(R.id.button3).setOnClickListener(mListener);
+
+//        LinearLayout lin1Block = (LinearLayout) view.findViewById(R.id.lin1);
+//
+//        lin1Block.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getActivity(), TextDirection.class);
+//                DFragment.this.startActivity(intent);
+//            }
+//        });
+//
+//        LinearLayout lin2Block = (LinearLayout) view.findViewById(R.id.lin2);
+//        lin2Block.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getActivity(), TextDirection2.class);
+//                DFragment.this.startActivity(intent);
+//            }
+//        });
 
         return view;
     }
+
+    private final View.OnClickListener mListener = new View.OnClickListener() {
+        public void onClick(View view) {
+            switch (view.getId()) {
+                case R.id.lin1:
+                    Intent intent1 = new Intent(getActivity(), TextDirection.class);
+                    DFragment.this.startActivity(intent1);
+                    break;
+                case R.id.lin2:
+                    Intent intent2 = new Intent(getActivity(), TextDirection.class);
+                    DFragment.this.startActivity(intent2);
+                    break;
+                case R.id.lin3:
+                    Intent intent3 = new Intent(getActivity(), TextDirection.class);
+                    DFragment.this.startActivity(intent3);
+                    break;
+            }
+        }
+    };
 
 
     @Override
@@ -51,8 +85,6 @@ public class DFragment extends DialogFragment{
             int height = ViewGroup.LayoutParams.MATCH_PARENT;
             dialog.getWindow().setLayout(width, height);
         }
-
-
 
     }
 
