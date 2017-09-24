@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/topPadding"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingBottom = "30dip"
+        android:text=""
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/view_below"
+        android:background="#b2b2b2"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        >
+
+        <RadioButton
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Time" />
+
+        <RadioButton
+            android:id="@+id/money"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="$$$"/>
+
+        <RadioButton
+            android:id="@+id/distance"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Distance" />
+
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disable use of multiple services in a trip"
+        android:textColor="#333333"
+        android:paddingLeft="10dip"
+        android:background="#c4c2c2"
+        />
+
+    <TextView
+        android:id="@+id/padding1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingBottom = "30dip"
+        android:text=""
+        />
+
+    <TextView
+        android:id="@+id/border"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:paddingBottom = "30dip"
+        android:text=""
+        android:background="#5E5E5E"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background= "#e8e8e8"
+        android:clickable="true"
+        android:id="@+id/lin1"
+        android:onClick="onClick"
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingTop="5dip"
+            android:text="CAR2GO"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:text="BUS"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background= "#000000">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="20 MINUTES"
+                android:gravity="center_vertical|right"
+                android:textColor="#B5D5F5"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/border4"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:paddingBottom = "30dip"
+        android:text=""
+        android:background="#5E5E5E"
+        />
+
+    <TextView
+        android:id="@+id/padding3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingBottom = "30dip"
+        android:text=""
+        />
+
+    <TextView
+        android:id="@+id/border2"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:paddingBottom = "30dip"
+        android:text=""
+        android:background="#5E5E5E"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background= "#e8e8e8">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:text="CAR2GO"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:text=""
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background= "#000000">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="27 MINUTES"
+                android:gravity="center_vertical|right"
+                android:textColor="#B5D5F5"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/border5"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:paddingBottom = "30dip"
+        android:text=""
+        android:background="#5E5E5E"
+        />
+
+    <TextView
+        android:id="@+id/padding2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingBottom = "30dip"
+        android:text=""
+        />
+
+    <TextView
+        android:id="@+id/border3"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:paddingBottom = "30dip"
+        android:text=""
+        android:background="#5E5E5E"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background= "#e8e8e8">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:text="BUS"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:text=""
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background= "#000000">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="35 MINUTES"
+                android:gravity="center_vertical|right"
+                android:textColor="#B5D5F5"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/border6"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:paddingBottom = "30dip"
+        android:text=""
+        android:background="#5E5E5E"
+        />
+
+
+</LinearLayout>
