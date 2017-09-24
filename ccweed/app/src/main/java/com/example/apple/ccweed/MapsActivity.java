@@ -29,6 +29,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleMap mMap;
     private LatLng currPosition = new LatLng(49.2834510, -123.1152550);
     private MarkerOptions currMarker = new MarkerOptions().position(currPosition).title("Bcit DownTown Vancouver");
+    public String currLocation;
+    public String startPosition = "bcit vancouver downtown";
 
 
     @Override
@@ -75,6 +77,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapSearch(View view) {
         EditText locationSearch = (EditText) findViewById(R.id.editText);
         String location = locationSearch.getText().toString();
+        currLocation = location;
         List<Address> addressList = null;
         mMap.clear();
 
